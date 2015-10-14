@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title class="app_name"></title>
+    <link rel="stylesheet" href="static/css/jquery.mobile-1.3.2.css" />
+    <link rel="stylesheet" href="static/css/mainstyle.css" />
+    <script type="text/javascript" src="static/js/jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="static/js/jquery.mobile-1.3.2.js"></script>
+     <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+  </head>
+  <body>
+       <div data-role="page" id="challenge" data-theme="c">
+    <div data-role="header">
+        <ul data-role="listview" style="list-style:none;">
+          <li><img src="static/images/logo1.png" alt="logo" />
+              <h3><span class="app_name"></span></h3>
+              <p>History on the GO.</p>
+          </li>
+        </ul>
+    </div>
+           <div data-role="content">
+               <div class="ui-grid-a">
+                   <div class="ui-block-a">
+                       
+                   </div>
+                   <div class="ui-block-b">
+                       <a href="#" data-role="button" data-theme="c" data-inset="true" data-inline="true" id="change_view">Change View</a>
+                   </div>
+               </div>
+               <div class="ui-grid-a">
+                   <div class="ui-block-a">
+              
+                       <div id="map">
+
+                       </div>
+                   </div> 
+                   <div class="ui-block-b" id="top_info">
+                       <ul id="my_info" data-role="listview" data-theme="b">
+                           <li><h1>Information</h1></li>
+                       </ul>
+                       <ul data-role="listview">
+                           <li id="place_name">Name</li>
+                           <li id="place_address">Address</li>
+                           <li data-theme="b"><h2><b>History</b></h2></li>
+                           <li id="history_header">Heading</li>
+                           <li id="history_content">Content</li>
+                       </ul>
+                   </div>
+    	    
+               </div>
+               <br />
+               <div id="bottom_info">
+    	        
+               </div>
+           </div>
+    <div data-role="footer" data-position="fixed">
+       2013 - <a href="http://www.mrena.co.za" data-role="none" style="color:white;text-decoration: none;">Mrena Systems</a>
+  </div>
+  </div>
+      <script src="static/js/logic.js"></script>
+      <script src="static/js/markers.js"></script>
+    <script src="/socket.io/lib/socket.io.js"></script>
+  </body>
+</html>
